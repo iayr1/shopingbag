@@ -108,8 +108,7 @@ shoptrend/
 │   ├── main.dart                    
 │   ├── home_screen.dart             
 │   ├── product_detail_screen.dart   
-│   ├── cart_screen.dart             
-│   ├── profile_screen.dart          
+│   ├── cart_screen.dart                     
 ├── pubspec.yaml                     
 ├── README.md                        
 ├── home_screen.png
@@ -159,7 +158,23 @@ print('Price type: ${product['price'].runtimeType}, value: ${product['price']}')
 </ul>
 
 <h3>🖼️ Screenshots</h3>
-<p>Capture from emulator/device, save in root, and reference in README.</p>
+<h2>🖼️ Screenshots</h2>
+
+<ul>
+  <li><strong>Home Screen</strong><br/>
+    <img src="124.png" alt="Home Screen" width="300"/>
+  </li>
+  <li><strong>Cart Screen</strong><br/>
+    <img src="123.png" alt="Cart Screen" width="300"/>
+  </li>
+  <li><strong>Razor Pay</strong><br/>
+    <img src="126.png" alt="Cart Screen" width="300"/>
+  </li>
+  <li><strong>Product Details Screen</strong><br/>
+    <img src="125.png" alt="Cart Screen" width="300"/>
+  </li>
+</ul>
+
 
 <h3>💳 Razorpay Issues</h3>
 <p>Validate API key and test in INR.</p>
