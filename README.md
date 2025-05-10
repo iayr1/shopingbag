@@ -1,211 +1,181 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>ShopTrend - E-commerce Flutter App</title>
-</head>
-<body style="font-family: Arial, sans-serif; line-height: 1.6;">
+<h1>ShopTrend - E-commerce Flutter App</h1>
 
-  <h1>ShopTrend - E-commerce Flutter App</h1>
+<p>ShopTrend is a modern, user-friendly e-commerce mobile application built with Flutter. It provides a seamless shopping experience with a beautiful front page, product browsing, cart management, and user profile features. The app uses a clean, professional UI inspired by popular e-commerce platforms, with prices displayed in Indian Rupees (₹) and robust error handling for API data.</p>
 
-  <p>
-    ShopTrend is a modern, user-friendly e-commerce mobile application built with Flutter. It provides a seamless shopping experience with a beautiful front page, product browsing, cart management, and user profile features. The app uses a clean, professional UI inspired by popular e-commerce platforms, with prices displayed in Indian Rupees (₹) and robust error handling for API data.
-  </p>
+<hr/>
 
-  <h2>Features</h2>
+<h2>🚀 Features</h2>
 
-  <h3>Modern Home Screen</h3>
-  <ul>
-    <li>Hero banner carousel with promotional images.</li>
-    <li>Category chips for filtering products.</li>
-    <li>Three curated sections: Recent Products, Latest One, and New Arrivals.</li>
-    <li>Horizontal scrollable product lists with hero animations.</li>
-  </ul>
+<h3>🏠 Modern Home Screen</h3>
+<ul>
+  <li>Hero banner carousel with promotional images.</li>
+  <li>Category chips for filtering products.</li>
+  <li>Three curated sections: Recent Products, Latest One, and New Arrivals.</li>
+  <li>Horizontal scrollable product lists with hero animations.</li>
+</ul>
 
-  <h3>Product Detail Screen</h3>
-  <ul>
-    <li>Detailed product view with image, title, price (₹), and description.</li>
-    <li>Add-to-cart and buy-now (Razorpay integration) functionality.</li>
-    <li>Smooth image transitions using Hero widgets.</li>
-  </ul>
+<h3>🛍️ Product Detail Screen</h3>
+<ul>
+  <li>Detailed product view with image, title, price (₹), and description.</li>
+  <li>Add-to-cart and buy-now (Razorpay integration) functionality.</li>
+  <li>Smooth image transitions using Hero widgets.</li>
+</ul>
 
-  <h3>Cart Screen</h3>
-  <ul>
-    <li>Dynamic cart with quantity controls and item removal.</li>
-    <li>Price calculations including subtotal, tax (8%), and shipping (₹499.17).</li>
-    <li>Checkout button to clear the cart and confirm orders.</li>
-  </ul>
+<h3>🛒 Cart Screen</h3>
+<ul>
+  <li>Dynamic cart with quantity controls and item removal.</li>
+  <li>Price calculations including subtotal, tax (8%), and shipping (₹499.17).</li>
+  <li>Checkout button to clear the cart and confirm orders.</li>
+</ul>
 
-  <h3>Profile Screen</h3>
-  <ul>
-    <li>User information display (name, email).</li>
-    <li>Options for settings, order history, and logout.</li>
-  </ul>
+<h3>👤 Profile Screen</h3>
+<ul>
+  <li>User information display (name, email).</li>
+  <li>Options for settings, order history, and logout.</li>
+</ul>
 
-  <h3>State Management</h3>
-  <ul>
-    <li>Uses Provider for cart state management across screens.</li>
-    <li>Persistent cart data with real-time updates.</li>
-  </ul>
+<h3>🧠 State Management</h3>
+<p>Uses Provider for cart state management across screens. Persistent cart data with real-time updates.</p>
 
-  <h3>Currency</h3>
-  <ul>
-    <li>Prices converted from USD to INR (1 USD = 83 INR).</li>
-    <li>Consistent use of ₹ symbol for all price displays.</li>
-  </ul>
+<h3>💰 Currency</h3>
+<p>Prices converted from USD to INR (1 USD = 83 INR). Consistent use of ₹ symbol for all price displays.</p>
 
-  <h3>Navigation</h3>
-  <ul>
-    <li>Bottom navigation bar for easy access to Home, Cart, and Profile screens.</li>
-    <li>Back navigation for Product Detail and Cart screens.</li>
-  </ul>
+<h3>🧭 Navigation</h3>
+<p>Bottom navigation bar for easy access to Home, Cart, and Profile screens. Back navigation for Product Detail and Cart screens.</p>
 
-  <h3>Error Handling</h3>
-  <ul>
-    <li>Robust handling for API data (e.g., price type mismatches, null values).</li>
-    <li>Image placeholders for failed network requests.</li>
-    <li>User-friendly error messages for API failures.</li>
-  </ul>
+<h3>🛠️ Error Handling</h3>
+<p>Robust handling for API data (e.g., price type mismatches, null values). Image placeholders and user-friendly error messages for API failures.</p>
 
-  <h2>Screenshots</h2>
-  <ul>
-    <li><strong>Home Screen</strong><br>
-        <img src="home_screen.png" alt="Home Screen" width="300">
-    </li>
-    <li><strong>Product Detail Screen</strong><br>
-        <img src="product_detail_screen.png" alt="Product Detail Screen" width="300">
-    </li>
-    <li><strong>Cart Screen</strong><br>
-        <img src="cart_screen.png" alt="Cart Screen" width="300">
-    </li>
-    <li><strong>Profile Screen</strong><br>
-        <img src="profile_screen.png" alt="Profile Screen" width="300">
-    </li>
-  </ul>
+<hr/>
 
-  <h2>Setup Instructions</h2>
+<h2>🖼️ Screenshots</h2>
 
-  <h3>Prerequisites</h3>
-  <ul>
-    <li>Flutter SDK (version 3.0.0 or later)</li>
-    <li>Dart (included with Flutter)</li>
-    <li>IDE (e.g., VS Code, Android Studio)</li>
-    <li>Emulator or physical device for testing</li>
-  </ul>
+<ul>
+  <li><strong>Home Screen</strong><br/>home_screen.png</li>
+  <li><strong>Product Detail Screen</strong><br/>product_detail_screen.png</li>
+  <li><strong>Cart Screen</strong><br/>cart_screen.png</li>
+  <li><strong>Profile Screen</strong><br/>profile_screen.png</li>
+</ul>
 
-  <h3>Installation</h3>
-  <ol>
-    <li><strong>Clone the Repository:</strong>
-      <pre><code>git clone &lt;repository-url&gt;
+<hr/>
+
+<h2>⚙️ Setup Instructions</h2>
+
+<h3>✅ Prerequisites</h3>
+<ul>
+  <li>Flutter SDK (version 3.0.0 or later)</li>
+  <li>Dart (included with Flutter)</li>
+  <li>IDE (e.g., VS Code, Android Studio)</li>
+  <li>Emulator or physical device for testing</li>
+</ul>
+
+<h3>📥 Installation</h3>
+
+<ol>
+  <li><strong>Clone the Repository</strong>
+    <pre><code>git clone &lt;repository-url&gt;
 cd shoptrend</code></pre>
-    </li>
+  </li>
 
-    <li><strong>Install Dependencies:</strong><br>
-    Ensure your <code>pubspec.yaml</code> includes:
-    <pre><code>dependencies:
-  flutter:
-    sdk: flutter
-  provider: ^6.0.0</code></pre>
-    Run:
+  <li><strong>Install Dependencies</strong>
     <pre><code>flutter pub get</code></pre>
-    </li>
+  </li>
 
-    <li><strong>Configure API Service:</strong><br>
+  <li><strong>Configure API Service</strong><br/>
     Update <code>lib/services/api_service.dart</code> with your API endpoint.
-    Ensure the API returns fields: <code>id</code>, <code>title</code>, <code>image</code>, <code>price</code>, and optionally <code>description</code>.
-    </li>
+  </li>
 
-    <li><strong>Configure Razorpay:</strong><br>
-    Update <code>lib/services/razorpay_service.dart</code> with your Razorpay API key.
-    </li>
+  <li><strong>Configure Razorpay</strong><br/>
+    Update <code>lib/services/razorpay_service.dart</code> with your Razorpay API key and configuration.
+  </li>
 
-    <li><strong>Run the App:</strong>
-      <pre><code>flutter run</code></pre>
-    </li>
-  </ol>
+  <li><strong>Run the App</strong>
+    <pre><code>flutter run</code></pre>
+  </li>
+</ol>
 
-  <h2>Project Structure</h2>
+<hr/>
 
-  <pre><code>shoptrend/
+<h2>📁 Project Structure</h2>
+
+<pre><code>
+shoptrend/
 ├── lib/
 │   ├── services/
-│   │   ├── api_service.dart         # API service for fetching products
-│   │   ├── razorpay_service.dart    # Razorpay payment integration
-│   ├── cart_provider.dart           # Provider for cart state management
-│   ├── main.dart                    # App entry point with navigation
-│   ├── home_screen.dart             # Front page with product sections
-│   ├── product_detail_screen.dart   # Product details and actions
-│   ├── cart_screen.dart             # Cart with price calculations
-│   ├── profile_screen.dart          # User profile and settings
-├── pubspec.yaml                     # Dependencies and app config
-├── README.md                        # Project documentation
-├── home_screen.png                  # Screenshot (add manually)
-├── product_detail_screen.png        # Screenshot (add manually)
-├── cart_screen.png                  # Screenshot (add manually)
-├── profile_screen.png               # Screenshot (add manually)
+│   │   ├── api_service.dart         
+│   │   ├── razorpay_service.dart    
+│   ├── cart_provider.dart           
+│   ├── main.dart                    
+│   ├── home_screen.dart             
+│   ├── product_detail_screen.dart   
+│   ├── cart_screen.dart             
+│   ├── profile_screen.dart          
+├── pubspec.yaml                     
+├── README.md                        
+├── home_screen.png
+├── product_detail_screen.png
+├── cart_screen.png
+├── profile_screen.png
 </code></pre>
 
-  <h2>Customization</h2>
+<hr/>
 
-  <h3>Hero Banner</h3>
-  <p>Replace placeholder URLs in <code>home_screen.dart</code> with your promotional images:</p>
-  <pre><code>final banners = [
+<h2>🎨 Customization</h2>
+
+<h3>🎯 Hero Banner</h3>
+<pre><code>
+final banners = [
   {'image': 'https://your-api.com/banners/sale.jpg', 'text': 'Mega Sale!'},
-  // Add more
-];</code></pre>
+];
+</code></pre>
 
-  <h3>Categories</h3>
-  <p>Update the categories list and implement filtering logic accordingly.</p>
+<h3>🧩 Categories</h3>
+<p>Update the categories list in <code>home_screen.dart</code> and implement category filtering logic.</p>
 
-  <h3>Product Sorting</h3>
-  <pre><code>final recentProducts = allProducts.where((p) => /* recent logic */).take(10).toList();</code></pre>
+<h3>🔄 Product Sorting</h3>
+<pre><code>
+final recentProducts = allProducts.where((p) => /* your logic */).take(10).toList();
+</code></pre>
 
-  <h3>Styling</h3>
-  <ul>
-    <li>Adjust theme colors (e.g., replace <code>Colors.teal</code>).</li>
-    <li>Modify card radius, image height in UI widgets.</li>
-  </ul>
+<h3>🎨 Styling</h3>
+<p>Modify colors and card dimensions in <code>main.dart</code> or individual widgets.</p>
 
-  <h3>API Integration</h3>
-  <ul>
-    <li>Ensure <code>api_service.dart</code> handles your API’s response format properly.</li>
-    <li>Handle edge cases like null fields, incorrect types.</li>
-  </ul>
+<h3>🔗 API Integration</h3>
+<p>Make sure <code>api_service.dart</code> handles your API's JSON format and fallback logic for null values.</p>
 
-  <h2>Troubleshooting</h2>
+<hr/>
 
-  <h3>FormatException</h3>
-  <p>If you encounter this:</p>
-  <pre><code>print('Price type: ${product['price'].runtimeType}, value: ${product['price']}');</code></pre>
+<h2>🧪 Troubleshooting</h2>
 
-  <h3>API Errors</h3>
-  <ul>
-    <li>Ensure API returns valid list with required fields.</li>
-    <li>Use fallbacks like <code>product['title'] ?? 'No Title'</code>.</li>
-  </ul>
+<h3>❌ FormatException</h3>
+<pre><code>
+print('Price type: ${product['price'].runtimeType}, value: ${product['price']}');
+</code></pre>
 
-  <h3>Screenshots</h3>
-  <ul>
-    <li>Run the app and take screenshots manually using device/emulator.</li>
-    <li>Save them as: <code>home_screen.png</code>, <code>product_detail_screen.png</code>, etc.</li>
-  </ul>
+<h3>❌ API Errors</h3>
+<ul>
+  <li>Ensure valid response with fields: <code>id</code>, <code>title</code>, <code>image</code>, <code>price</code></li>
+  <li>Provide fallbacks using null-aware operators</li>
+</ul>
 
-  <h3>Razorpay Issues</h3>
-  <ul>
-    <li>Use valid API key in <code>razorpay_service.dart</code>.</li>
-    <li>Prices must be passed in INR.</li>
-  </ul>
+<h3>🖼️ Screenshots</h3>
+<p>Capture from emulator/device, save in root, and reference in README.</p>
 
-  <h2>Notes</h2>
-  <ul>
-    <li>The app assumes USD prices and converts to INR (1 USD = 83 INR). Remove conversion if not needed.</li>
-    <li>The “Latest One” section highlights the first product. You can modify it.</li>
-    <li>The app uses Provider for cart state. Ensure <code>cart_provider.dart</code> is added.</li>
-    <li>Add real screenshots and update image paths accordingly.</li>
-  </ul>
+<h3>💳 Razorpay Issues</h3>
+<p>Validate API key and test in INR.</p>
 
-  <h2>License</h2>
-  <p>This project is licensed under the MIT License. See the LICENSE file for details.</p>
+<hr/>
 
-</body>
-</html>
+<h2>📌 Notes</h2>
+
+<ul>
+  <li>If API provides INR prices directly, remove USD to INR conversion.</li>
+  <li>The "Latest One" section picks the first product; change logic as needed.</li>
+  <li>Screenshots are placeholders — replace with actual images.</li>
+</ul>
+
+<hr/>
+
+<h2>📄 License</h2>
+<p>This project is licensed under the <strong>MIT License</strong>.<br/>
+See the <code>LICENSE</code> file for more details.</p>
